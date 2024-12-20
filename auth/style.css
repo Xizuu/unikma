@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#template {
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 1200px; /* Maximum width */
+    width: 90%; /* Make it responsive */
+}
+
+#header {
+    border-bottom: 2px solid #ccc;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#content-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+#content {
+    border: 1px solid #ccc;
+    padding: 30px;
+    background-color: white;
+    width: 100%;
+    height: 350px;
+}
+
+#content h1 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"], .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+    #content-wrapper {
+        flex-direction: column; /* Stack elements on small screens */
+    }
+
+    #content {
+        height: auto; /* Allow content height to expand */
+    }
+}
